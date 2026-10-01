@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: alquiladora-junior
+    runtime: static
+    buildCommand: echo "Sitio estatico"
+    staticPublishPath: .
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
